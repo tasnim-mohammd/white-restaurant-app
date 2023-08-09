@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/style2.css">
+</head>
+
+<body>  
+
+        
+          <div class="titleB">
+                <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t1.6435-9/192882024_105769938382721_8408343321821855858_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=TnL4AC26VisAX9TD_EC&_nc_ht=scontent.fjrs27-1.fna&oh=00_AT8RE9i9iNtJZixao4dMV1TeOwNgobLc97QaRwHhR2JAWQ&oe=62A16603"alt="logo" width="290px" height="290px">
+            <dive class="contant">
+        <div class="head"id="part">
+            <button class="z"><a href="/home"target="_blank" ><span>Home</span></a></button>
+            <button class="z"><a href="/imgMenu"target="_blank" ><span>Menu</span></a></button>
+            <button class="z"><span>Booking</span></button>
+            <button class="z"><a href="/visit"target="_blank" ><span>Visit</span></a></button>
+            <button class="z"><a href="https://www.google.com/maps/dir/32.2240512,35.2354304/32.2159963,35.2372675/@32.2200835,35.247805,15z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0"target="_blank" ><span>location</span></a></button>              
+            <button class="z"><a href="https://www.facebook.com/Whiteloungepal"target="_blank" class="fa fa-facebook"></a></button>
+            <button class="z"><a href="https://www.instagram.com/white_lounge/?hl=en"target="_blank" class="fa fa-instagram"></a></button>
+
+        </div>
+    </div>
+    <form action="/auth3/tables" method="POST">
+    <div class="Table">
+        <h1><em>Booking<hr></em></h1>
+        
+      
+
+       
+        <br>
+        <div class="column">
+       <label><h4>Time (9am to 11pm)</h4></label> 
+        <input type="time" id="appt" name="Time"
+        min="09:00" max="23:00" required>
+          
+        </div>
+        <br>
+        <div class="column">
+            <label><h4>Number of customers</h4></label>
+            <input type="number" id="A" name="customers" value="Number of customers:" min="1"  >  
+        </div>
+        <br>
+         <div class="column">
+           <label><h4>your phone number</h4></label> 
+          <input name="num" type="text" >
+            </input>
+        </div>
+        <br>
+        <div class="column">
+           <label><h4>Note...</h4></label> 
+          <input name="Note"  >
+            </input>
+        </div>
+        <br>
+        <div class="column">
+            <input id="submit" type="submit" value="Submit">
+            </div>
+    </div>
+    </form>
+    {{#if message}}
+        <h4>{{message}}</h4>
+        {{/if}}
+</body>
+</html>

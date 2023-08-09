@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background:url('https://gcdnb.pbrd.co/images/r6rPeOlyBZeW.jpg?o=1') ;
+    background-size:cover ;
+    width: 1000px;
+
+}
+.message1{
+    position: absolute;
+    top: 77%;
+    left: 20%;
+}
+.message2{
+    position: absolute;
+    top: 69%;
+    left: 30%;
+}
+.message1 h4{
+    color: rgb(235, 45, 45);
+    font-size:small;
+   text-shadow: 0 0 1px black;
+   position: relative;
+   top: -49px;
+
+}
+.message2 h4{
+    color: rgb(235, 45, 45);
+    font-size:small;
+   text-shadow: 0 0 1px black;
+   position: relative;
+   left: -15px;
+}
+.message3 h4{
+   color: rgb(235, 45, 45);
+   font-size:small;
+   text-shadow: 0 0 1px black;
+   position: relative;
+  
+   top: -50px;
+}
+.welcom{
+    
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+.welcom h1{
+    font-size: xx-large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sign_up{
+    width: 360px;
+    height: 620px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    background-color: rgba(87, 85, 81, 0.534);
+    border-radius: 3px;
+    border: 1px solid rgb(194, 190, 190);
+}
+.login{
+    width: 360px;
+    height:310px ;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: auto;
+    border-radius: 3px;
+    background-color:rgb(87, 85, 81, 0.534) ;
+    border: 1px solid rgb(194, 190, 190);
+
+
+}
+.Forgot_Password{
+    width: 370px;
+    height:280px ;
+    top: 50%;
+    left: 50%;
+    background-color:rgb(87, 85, 81, 0.534) ;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: rgb(0, 2, 3);
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid rgb(194, 190, 190);
+
+}
+.RESET_Password{
+    width: 370px;
+    height:450px ;
+    top: 50%;
+    left: 50%;
+    background-color:rgb(87, 85, 81, 0.534) ;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    color: rgb(0, 2, 3);
+    margin: auto;
+    border-radius: 3px;
+    border: 1px solid rgb(194, 190, 190);
+
+}
+.field-icon{
+    float: right;
+    margin-top: -25px;
+    margin-right: 5px;
+    position: relative;
+    z-index: 2;
+ }
+ #validation_box{
+     display: none; 
+    background-color: rgb(243, 232, 212);
+    border-radius: 3px;
+    border: 1px solid rgb(194, 190, 190);
+
+    position: absolute;
+    top:50%;
+    left:65%;
+    padding: 10px;
+    margin-top:4px;
+    text-align:center;
+ }
+ .valid{
+    color:#7fcf35
+}
+
+.valid:before{
+position: relative;
+ Left: -8px;
+ content: url(true.png);
+ top:3px;
+}
+
+.invalid::before{
+    position: relative;
+     Left: -8px;
+     top: 3px;
+     content: url(false.png);
+}
+h1{
+    text-align: center;
+    padding-top: 15px;
+
+}
+h4{
+    text-align: center;
+}
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+
+}
+form input{
+    width: 100%;
+    padding: 8px 8px 8px 30px;
+    border: none;
+    border: 1px solid gray;
+    border-radius: 6px;
+    outline: none;
+}
+.input-field{
+    position: relative;
+}
+
+input[type="submit"]{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px ;
+    border: none;
+    background-color: rgb(60, 161, 207);
+    color: white;
+    font-size: 18px;
+
+}
+i{
+    position: absolute;
+    left: 10px;
+    top: 9px;
+}
+
+i:nth-child(4){
+    left:270px;
+    cursor: pointer;
+}
+.btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    top: 5px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.btn1{
+    width: 150px;
+    height: 45px;
+    border-radius: 45px;
+    cursor: pointer;
+    border: none;
+    letter-spacing: 2px;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #2ceae5;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+
+}
+.par{
+    color: white;
+   text-align: center;
+   font-size: 15px;
+   position: relative;
+   top: -7px;
+}
+ a{
+    color:rgb(60, 161, 207) ;
+    text-decoration: none;
+
+}
+.titleB img{
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    border-radius: 150px;
+  
+  }
+.icon{
+    text-align: center;
+}
+

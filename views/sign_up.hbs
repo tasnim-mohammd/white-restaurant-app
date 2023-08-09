@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    {{!-- <script src="main.js"></script> --}}
+  <link rel="stylesheet" href="/style.css">
+    <title>sign up</title>
+</head>
+
+<body>
+    <div class="titleB">
+                <img src="https://scontent.fjrs27-1.fna.fbcdn.net/v/t1.6435-9/192882024_105769938382721_8408343321821855858_n.jpg?_nc_cat=111&ccb=1-6&_nc_sid=09cbfe&_nc_ohc=TnL4AC26VisAX9TD_EC&_nc_ht=scontent.fjrs27-1.fna&oh=00_AT8RE9i9iNtJZixao4dMV1TeOwNgobLc97QaRwHhR2JAWQ&oe=62A16603"alt="logo" width="290px" height="290px">
+        </div>
+    <div class="sign_up">
+        <h1><em>Sign Up</em></h1>
+        <form action="/auth/sign_up"method="POST">
+           <label for="First Name">First Name</label>
+           <input type="text" name="FName" placeholder="First Name">
+           <label for="Last Name">Last Name</label>
+           <input type="text" name="LName" placeholder="Last Name"> 
+           <label for="email">Email</label>
+           <input type="email" name="email" placeholder="Email"> 
+           <label for="password">Password</label>
+           <div class="input-field">
+    <input type="password"placeholder="Password" name="password" id="password">
+    <br />
+    
+            <i class="fa fa-lock" style="display: none;" aria-hidden="true"></i>
+            <i class="fa fa-eye" id="togglePassword" aria-hidden="true"></i>
+    </div>
+    
+           <label for="Confirm Password">Confirm Password</label>
+           <input type="password" name="confirmPassword" placeholder="Confirm Password">
+           <input type="submit"value="submit"class="btn">  
+      
+        </form>
+        <div class="message2">
+     {{#if message}}
+        <h4>{{message}}</h4>
+        {{/if}}
+        </div>
+       
+        <p>By clicking the sign up,You agree to our<br>
+        <a href="#">Terms and Condition</a>and <a href="#">Policy and Privacy</a>
+        <p class="par">Already have an account? <a href="/">Log in</a></p>
+        </p>
+
+    
+    </div>
+    <div  id="validation_box">
+<h4>Password Must Contain The Following</h4>
+<p id="letter" class="invalid">Lowercase Letters</p>
+<p id="capital" class="invalid">Uppercase Letters</p>
+<p id="number" class-"invalid">A Number</p>
+<p id="length" class="invalid">Atleast 8 Characterk/p>
+</div>
+<script src="/main.js"></script>
+
+</body>
+</html>
